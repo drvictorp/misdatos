@@ -1,0 +1,54 @@
+---
+title: "gggplott2"
+author: "Dr Victor"
+date: "20 de junio de 2019"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+```{r}
+#cls()
+```
+
+
+```{r}
+
+#View(iris)
+head(iris)
+attach(iris)
+table(Species)
+```
+
+```{r}
+plot(Sepal.Length ~ Petal.Length,col="blue", pch=16)
+```
+```{r}
+hist(Sepal.Width,col="green")
+
+```
+
+```{r}
+boxplot(Sepal.Length ~ Species,col="burlywood")
+```
+```{r}
+plot <- ggplot(data=iris, aes(x= Petal.Length, y= Sepal.Length)) + geom_point()
+plot 
+```
+
+```{r}
+plot <- ggplot(data=iris, aes(x= Petal.Length, y= Sepal.Length,col=Species)) + geom_point()
+plot
+```
+```{r}
+plot <- ggplot(data=iris, aes(x= Petal.Length, y= Sepal.Length,col=Species,shape=Species)) + geom_point()
+plot
+```
+
+
+
+
