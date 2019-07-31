@@ -83,9 +83,3 @@
 
 Consulta con el grupo para seguir progresando
 
-    
-----------
-## Próximos pasos
-[ ] Sé creativo, @alguien
-[ ] De "hay que hacerlo" a "hecho", @alguien
-
